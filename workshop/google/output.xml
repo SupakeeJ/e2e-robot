@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2025-02-15T12:00:22.554666" rpa="false" schemaversion="5">
+<suite id="s1" name="Google K1" source="/Users/wlb-kop/Documents/e2e-robot/workshop/google/google_k1.robot">
+<test id="s1-t1" name="ทดสอบค้นหาด้วยตำค้น Robot ต้องเจอ Robot" line="7">
+<kw name="เปิด Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-15T12:00:22.631399" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>browser=chrome</arg>
+<arg>url=https://www.google.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-15T12:00:22.631304" elapsed="5.038877"/>
+</kw>
+<status status="PASS" start="2025-02-15T12:00:22.630972" elapsed="5.039589"/>
+</kw>
+<kw name="ใส่คำค้น">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-15T12:00:27.671717" level="INFO">Typing text 'Robot' into text field 'id=APjFqb'.</msg>
+<arg>id=APjFqb</arg>
+<arg>text=Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-15T12:00:27.671267" elapsed="0.094344"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-15T12:00:27.766176" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-02-15T12:00:27.766331" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-02-15T12:00:27.766374" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-15T12:00:27.765801" elapsed="1.222683"/>
+</kw>
+<status status="PASS" start="2025-02-15T12:00:27.670986" elapsed="1.317595"/>
+</kw>
+<kw name="ตรวจสอบ">
+<msg time="2025-02-15T12:00:28.989114" level="FAIL">User keyword cannot be empty.</msg>
+<status status="FAIL" start="2025-02-15T12:00:28.988800" elapsed="0.000349">User keyword cannot be empty.</status>
+</kw>
+<status status="FAIL" start="2025-02-15T12:00:22.630476" elapsed="6.358955">User keyword cannot be empty.</status>
+</test>
+<status status="FAIL" start="2025-02-15T12:00:22.555392" elapsed="6.434532"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Google K1">Google K1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
