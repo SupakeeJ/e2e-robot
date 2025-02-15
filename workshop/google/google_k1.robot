@@ -17,3 +17,4 @@ Library    SeleniumLibrary
     Press Keys    None    RETURN
 
 ตรวจสอบ
+    Wait Until Page Contains    Robot
